@@ -1,0 +1,1 @@
+# FTL_Savegame_Manager
