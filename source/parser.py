@@ -1,6 +1,6 @@
 
 
-class Parser():
+class Parser:
     def __init__(self):
         x  = 0
 
