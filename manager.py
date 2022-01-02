@@ -13,11 +13,16 @@ class Gui:
     def __init__(self):
         config = ConfigParser()
         config.read("config.ini")
-        self.target_path = str(config["DEFAULT"]["target_path"])
+        self.target_path = config["DEFAULT"]["target_path"]
         self.saves_db_path = config["DEFAULT"]["saves_db_path"]
         self.saves_new_path = config["DEFAULT"]["saves_new_path"]
         self.update_frequency = config["DEFAULT"]["update_frequency"]
         self.button_color = "#857E7D"
+
+        if not os.path.exists(self.saves_db_path):
+            os.makedirs(self.saves_db_path)
+        if not os.path.exists(self.saves_new_path):
+            os.makedirs(self.saves_new_path)
 
         if self.update_frequency is None:
             self.update_frequency = 2000
