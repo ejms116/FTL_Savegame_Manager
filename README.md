@@ -1,5 +1,10 @@
-# FTL_Savegame_Manager
+# FTL Savegame Manager
 The FTL Savegamer Manager is a tool to keep track of your savegames in a FTL run. After a full run you end up with a folder that has a savegame from every beacon. The intention was to collect interesting/bad fights and use those as training to get better at handling those.
+
+# Disclaimer
+I only tested this program for the Steam Version 1.6.14. If you're using a diffrent version the game might crash trying to read the save-file. I'll maybe add support for Multiverse in the future. This program also currently only works on windows.
+
+Also note that there is a very small chance that FTL will try to access the current save file at the same time as this program. If that happens there will be an message in FTL saying that it was unable to save. This is unproblematic, FTL will save your progress again on the next beacon.
 
 # Credits
 The code that reads the continue.sav file is based on Vhati's profile editor and the python implementation by whiskeythecat.
@@ -9,7 +14,7 @@ https://github.com/Vhati/ftl-profile-editor
 https://github.com/whiskeythecat/ftl_twitch
 
 # Setup
-If you just want to use the program. The only thing you need is to download the standalone.zip file.
+If you just want to use the program. The only thing you need is to download the standalone.zip file from this repo or the ftl_savegame_manager.zip file [here](https://sourceforge.net/projects/ftl-savegame-manager/).
 
 * Download the zip file and extract it 
 * you should end up with a directory that includes 2 folders (current and saves), a config.ini and the ftl_savegame_manager.exe
