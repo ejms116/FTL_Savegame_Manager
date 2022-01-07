@@ -2,7 +2,7 @@
 The FTL Savegamer Manager is a tool to keep track of your savegames in a FTL run. After a full run you end up with a folder that has a savegame from every beacon. The intention was to collect interesting/bad fights and use those as training to get better at handling those.
 
 # Disclaimer
-I only tested this program for the Steam Version 1.6.14. If you're using a diffrent version the game might crash trying to read the save-file. I'll maybe add support for Multiverse in the future. This program also currently only works on windows.
+I only tested this program for the Steam Version 1.6.14. If you're using a diffrent version the program might crash trying to read the save-file. I'll maybe add support for Multiverse in the future, please let me know if someone is interested in that. This program also currently only works on windows.
 
 Also note that there is a very small chance that FTL will try to access the current save file at the same time as this program. If that happens there will be an message in FTL saying that it was unable to save. This is unproblematic, FTL will save your progress again on the next beacon.
 
