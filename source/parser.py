@@ -183,3 +183,4 @@ class Parser:
         save["player_ship"] = self.read_ship(fin)
 
         return save
+8

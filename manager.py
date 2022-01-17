@@ -122,7 +122,7 @@ class Gui:
                                      command=self.save_file)
 
         test_button = tk.Button(self.menu_left, text="Test", padx=10, pady=5, fg="white", bg=self.button_color,
-                                     command=self.update_run_detail)
+                                     command=self.test_read)
 
         open_saves_button = tk.Button(self.menu_left, text="Open Saves Folder", padx=10, pady=5, fg="white", bg=self.button_color,
                                      command=self.open_saves_folder)
@@ -137,12 +137,18 @@ class Gui:
 
         self.track_run_button.pack(fill="x", pady=10)
 
-        #test_button.pack()
+        test_button.pack()
 
         self.change_color()
 
         self.beacons = 999 # initialize
         self.latest_filepath = ""
+
+    def test_read(self):
+        if os.path.exists(self.target_path):
+            full_save = self.savegame.parse_all()
+            self.update_statusbar("full_save read")
+
 
     def show_help(self):
         pass
