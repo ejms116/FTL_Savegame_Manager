@@ -14,7 +14,7 @@ https://github.com/Vhati/ftl-profile-editor
 https://github.com/whiskeythecat/ftl_twitch
 
 # Setup
-If you just want to use the program. The only thing you need is to download the standalone.zip file from this repo or the ftl_savegame_manager.zip file [here](https://sourceforge.net/projects/ftl-savegame-manager/).
+If you just want to use the program. The only thing you need is to download .exe from the releases.
 
 * Download the zip file and extract it 
 * you should end up with a directory that includes 2 folders (current and saves), a config.ini and the ftl_savegame_manager.exe
